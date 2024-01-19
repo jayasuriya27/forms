@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{ 
+    background: url('../images/back.jpg');
+    position: relative;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+.back1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 3rem;
+}
+ .form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:transparent;
+    border-radius: 10px ;
+    width: 30vw;
+    padding:20px;
+    box-shadow: 3px 3px 5px -1px rgb(33, 85, 85),
+                -3px -3px 5px 1px rgb(33, 85, 85);
+ }
+ .form1 h1{
+   color: red;
+   padding: 1rem;
+ }
+ .form1 h3{
+   color: crimson;
+   padding: .5rem;
+ }
+
+ .form1 .sign-up{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+ }
+ .form1 .sign-up :nth-child(1){
+  position: relative;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+ }
+ .form1 .sign-up :nth-child(1)::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(13, 206, 209);
+  z-index: -1;
+  transform-origin: bottom;
+  transform: scaley(0);
+  transition: transform 1.5s;
+ }
+ .form1 .sign-up :nth-child(1):hover::before{
+  transform: scaley(1);
+  transform-origin: top;
+ }
+ .form1 .sign-up :nth-child(2){
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: transparent;
+ }
+ .form1 form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+ }
+ .form1 input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: transparent;
+    color: white;
+    width: 25vw;
+    height: 6vh;
+    margin: 10px;
+    padding: 5px;
+    border: 0px;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+ }
+ .form1 input:focus{
+   color: white;
+   font-size: 15px;
+   font-weight: 600;
+   background: black;
+ }
+ .form1 button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+ }
+ .form1 .account{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-weight: 500;
+ }
+ 
+ .form1 span{
+   color: rgba(141, 4, 4, 0.961);
+   text-align: center;
+   font-size: 12px;
+   font-weight: 600;
+ }
+ ::placeholder{
+   color: aliceblue;
+   font-size: 15px;
+   font-weight: 600;
+ }
+
+
+
+
+ .sign-in, .create{
+   text-decoration: none;
+   font-weight: 700;
+   font-size: 17px;
+   color: white;
+ }
+
+ 
+
+
+
+
+
+ .back2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+ }
+
+ .form2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: transparent;
+   border-radius: 10px;
+   width: 30vw;
+   padding: 1rem;
+   box-shadow: 3px 3px 5px -1px rgb(33, 85, 85),
+                -3px -3px 5px 1px rgb(33, 85, 85);
+ }
+ .form2 h2{
+   color: red;
+   margin: 1rem;
+ }
+ .form2 .signup{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+.form2 .signup :nth-child(1){
+position: relative;
+display: flex;
+width: 30px;
+height: 30px;
+border-radius: 50%;
+background: transparent;
+overflow: hidden;
+z-index: 1;
+}
+.form2 .signup :nth-child(1)::before{
+position: absolute;
+content: "";
+width: 100%;
+height: 100%;
+background: rgb(13, 206, 209);
+z-index: -1;
+transform-origin: bottom;
+transform: scaley(0);
+transition: transform 1.5s;
+}
+.form2 .signup :nth-child(1):hover::before{
+transform: scaley(1);
+transform-origin: top;
+}
+.form2 .signup :nth-child(2){
+position: relative;
+width: 25px;
+height: 25px;
+border-radius: 50%;
+background: transparent;
+}
+ .form2 form{
+   display: flex;
+   flex-direction: column;
+   padding: 1.rem;
+ }
+ .form2 input{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: transparent;
+   color: white;
+   width: 25vw;
+   height: 6vh;
+   margin: 10px;
+   padding: 5px;
+   border: 0px;
+   border-bottom: 2px solid white;
+   font-size: 15px;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+.form2 input:focus{
+   color: white;
+   font-size: 15px;
+   font-weight: 600;
+   background: black;
+ }
+
+ 
+.form2 button{
+  position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 2px solid white;
+   border-radius: 5px;
+   background-color: transparent;
+   color: white;
+   margin: 10px;
+   padding: 5px;
+   font-size: 20px;
+   font-weight: 900;
+   letter-spacing: 1px;
+}
+
+.form2 .check-box{
+   display: flex;
+   flex-direction: row;
+   margin-top: 1rem;
+}
+.form2 .check-box .read{
+   margin: .4rem;
+}
+#box{
+   width: 20px;
+   height: 20px;
+}
+
+.form2 .sign{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   font-weight: 500;
+}
+
+.form2 span{
+  color: rgba(141, 4, 4, 0.961);
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+ }
+
+ .form2 .check-box .terms{
+  text-decoration: none;
+  color:navy;
+ }
+
+
+
+ @media all and (max-width:700px) {
+  .back1{
+  margin-top: 1rem;}
+  .form1{
+    width: 80vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .form1 h1{
+    font-size: 20px;
+  }
+  .form1 h3{
+    font-size: 15px;
+  }
+  .form1 input{
+    width: 60vw;
+  }
+  .form1 .account p{
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .form2{
+    width: 80vw;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .form2 h2{
+    font-size: 18px;
+  }
+  .form2 input{
+    width: 65vw;
+    font-weight: 900;
+  }
+ }
